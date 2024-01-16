@@ -51,17 +51,18 @@
             margin-top: 20px;
             display: flex;
             justify-content: center;
+    flex-wrap: nowrap;
         }
 
         .round-button {
-          margin-top: 25px;
+          position: relative;
             display: inline-block;
-            margin: 0 10px;
+            margin:0 10px;
             width: 80px;
             height: 80px;
            line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
             text-align: center; /* Metni yatayda ortala */
-            border-radius: 50%;
+            border-radius: 10%;
             background-color: #222222; /* Renk: Mavi (Örnek renk) */
             color: #fff;
             font-size: 1em;
@@ -87,6 +88,29 @@
           transition: transform 0.3s ease;
           transform-origin: center;
         }
+      .round-button span {
+            position: relative;
+            z-index: 1;
+        }
+      .round-button::before {
+            content: "";
+            position: absolute;
+            border-radius: 10%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(25, 25, 25, 0.25); /* Arka plan rengi: Mavi (Opak) */
+            z-index: -1;
+            transition: transform 0.3s ease; /* Hover durumunda arka planı büyütme efekti ekleniyor */
+            transform: scale(0); /* Başlangıçta arka planı sıfıra küçült */
+            transform-origin: center;
+        }
+
+        .round-button:hover::before {
+            transform: scale(1); /* Hover durumunda arka planı normal boyuta getir */
+        }
+
       
         video {
             position: fixed;
@@ -98,6 +122,7 @@
             z-index: 0;
             opacity: 0.25;
         }
+      
     </style>
 </head>
 <body>
@@ -113,7 +138,7 @@
             <button class="round-button" onclick="alert('Button 1 clicked')">Linkedin</button>
             <button class="round-button" onclick="alert('Button 2 clicked')">Behance</button>
             <button class="round-button" onclick="alert('Button 2 clicked')">Sketchfab </button>
-        <button class="round-button" onclick="alert('Button 2 clicked')">YouTube</button>
+            <button class="round-button" onclick="alert('Button 2 clicked')">YouTube</button>
         </div>
     </main>
 </body>
