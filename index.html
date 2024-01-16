@@ -7,37 +7,62 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         body {
-            font-family:'Montserrat', Arial, sans-serif;
+            font-family: 'Montserrat', Arial, sans-serif;
             margin: 0;
             padding: 0;
-          display: flex;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 50vh;
-        } 
-       main {
-            text-align: center;
+            overflow: hidden;
+            position: relative;
+          background-color: #6639CC;
         }
-      h1 {
-            font-family: Montserrat;
+
+        main {
             text-align: center;
-        font-weight: 700;
+            z-index: 1;
+            color: #fff;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
             font-size: 4em;
             margin: 0;
         }
-       h2 {
-            font-family: Montserrat;
-         font-weight:400;
-            font-size: 1em; 
+
+        h2 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 1em;
             margin: 0;
-            color: #555;
+            color: white;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 0.25;
         }
     </style>
 </head>
 <body>
+    <video autoplay muted loop>
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-a-young-graphic-designer-is-working-on-a-graphic-typography-50602-large.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <main>
         <h1>Faruk Önder</h1>
-       <h2>3D Artist and Graphic Designer</h2>
+        <h2>3D Artist and Graphic Designer</h2>
     </main>
 </body>
 </html>
