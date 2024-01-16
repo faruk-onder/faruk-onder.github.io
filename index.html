@@ -39,9 +39,32 @@
             font-weight: 400;
             font-size: 1em;
             margin: 0;
+          margin-bottom: 50px;
             color: white;
         }
+  button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
 
+        .round-button {
+            display: inline-block;
+            margin: 0 10px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #6639CC; /* Renk: Mavi (Örnek renk) */
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            border: none; outline: 2px solid white; 
+            transition: background-color 0.3s ease;
+        }
+
+        .round-button:hover {
+            background-color: black; /* Hover rengi: Daha koyu mavi (Örnek renk) */
+        }
         video {
             position: fixed;
             top: 0;
@@ -63,6 +86,12 @@
     <main>
         <h1>Faruk Önder</h1>
         <h2>3D Artist and Graphic Designer</h2>
+      <div class="button-container">
+            <button class="round-button" onclick="alert('Button 1 clicked')">Linkedin</button>
+            <button class="round-button" onclick="alert('Button 2 clicked')">Behance</button>
+            <button class="round-button" onclick="alert('Button 2 clicked')">Sketchfab</button>
+        <button class="round-button" onclick="alert('Button 2 clicked')">ArtStation</button>
+        </div>
     </main>
 </body>
 </html>
