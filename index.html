@@ -110,6 +110,12 @@
         .round-button:hover::before {
             transform: scale(1); /* Hover durumunda arka planı normal boyuta getir */
         }
+        .round-button a {
+            text-decoration: none; /* Link altını çizme özelliği kaldırılıyor */
+            color: inherit; /* Link rengi, ebeveyn elementten miras alınıyor */
+            display: block; /* Linki blok öğe olarak ayarla, tıklama alanını genişletir */
+            height: 100%; /* Linkin tam yüksekliğini kaplamasını sağlar */
+        }
 
       
         video {
@@ -135,10 +141,10 @@
         <h1>Faruk Önder</h1>
         <h2>3D Artist and Graphic Designer</h2>
       <div class="button-container">
-            <button class="round-button" onclick="alert('Button 1 clicked')">Linkedin</button>
-            <button class="round-button" onclick="alert('Button 2 clicked')">Behance</button>
-            <button class="round-button" onclick="alert('Button 2 clicked')">Sketchfab </button>
-            <button class="round-button" onclick="alert('Button 2 clicked')">YouTube</button>
+            <button class="round-button"><a href="https://www.linkedin.com/in/faruk-onder/">Linkedin</a></button>
+            <button class="round-button"><a href="https://www.behance.net/farukonder">Behance</a></button>
+            <button class="round-button"><a href="https://sketchfab.com/fhillar">Sketchfab</a></button>
+            <button class="round-button"><a href="https://www.youtube.com/@fhillar">Youtube</a></button>
         </div>
     </main>
 </body>
