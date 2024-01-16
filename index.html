@@ -59,23 +59,29 @@
             background-color: #222222; /* Renk: Mavi (Örnek renk) */
             color: #fff;
             font-size: 1em;
+           overflow: hidden; 
             cursor: pointer;
             border: none; outline: 2px solid white; transition: background-color 0.3s ease, transform 0.3s ease; /* Transform ve arka plan renk geçişleri ekleniyor */
         }
 
         .round-button:hover {
+          content: "";
             background-color: black; /* Hover rengi: Daha koyu mavi (Örnek renk) */
             transform: scale(1.2); /* Hover durumunda 1.2 kat büyüt */
            background-image: url('https://media.licdn.com/dms/image/D4D03AQG6Pnfp7XgwMQ/profile-displayphoto-shrink_200_200/0/1691618316768?e=1710979200&v=beta&t=-XeXmo0MmLhmlSgPHAEIw3UKADddB-NcE-Tg_NVZZEI'); /* Buttonun içindeki görsel */
           background-size: cover;
           background-opacity: 0.5;
-          color: black;
+          color: white;
           font-weight: 700;
+           overflow: hidden; 
           text-align: center;
           line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
           background-color: rgba(155, 155, 155, 0.7);
           font-size: .9em;
+          transition: transform 0.3s ease;
+          transform-origin: center;
         }
+      
         video {
             position: fixed;
             top: 0;
