@@ -30,8 +30,20 @@
       
         h1, h2 {
             user-select: none; /* Kopyalanamaz yapma özelliği ekleniyor */
+            opacity: 0; /* Başlangıçta görünmez yap */
+            animation: fadeIn 2s ease-out forwards;
         }
-      
+        @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(-20px);
+        }
+
+            to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+        }
         h1 {
             font-family: 'Montserrat', Arial, sans-serif;
             font-weight: 700;
