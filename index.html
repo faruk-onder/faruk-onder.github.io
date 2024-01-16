@@ -14,10 +14,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 50vh;
+            height: 75vh;
             overflow: hidden;
             position: relative;
-          background-color: #6639CC;
+          background-color: #333333;
         }
 
         main {
@@ -30,14 +30,14 @@
         h1 {
             font-family: 'Montserrat', Arial, sans-serif;
             font-weight: 700;
-            font-size: 4em;
+            font-size: 6em;
             margin: 0;
         }
 
         h2 {
             font-family: 'Montserrat', Arial, sans-serif;
             font-weight: 400;
-            font-size: 1em;
+            font-size: 2em;
             margin: 0;
           margin-bottom: 50px;
             color: white;
@@ -53,17 +53,28 @@
             margin: 0 10px;
             width: 80px;
             height: 80px;
+           line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
+            text-align: center; /* Metni yatayda ortala */
             border-radius: 50%;
-            background-color: #6639CC; /* Renk: Mavi (Örnek renk) */
+            background-color: #222222; /* Renk: Mavi (Örnek renk) */
             color: #fff;
             font-size: 1em;
             cursor: pointer;
-            border: none; outline: 2px solid white; 
-            transition: background-color 0.3s ease;
+            border: none; outline: 2px solid white; transition: background-color 0.3s ease, transform 0.3s ease; /* Transform ve arka plan renk geçişleri ekleniyor */
         }
 
         .round-button:hover {
             background-color: black; /* Hover rengi: Daha koyu mavi (Örnek renk) */
+            transform: scale(1.2); /* Hover durumunda 1.2 kat büyüt */
+           background-image: url('https://media.licdn.com/dms/image/D4D03AQG6Pnfp7XgwMQ/profile-displayphoto-shrink_200_200/0/1691618316768?e=1710979200&v=beta&t=-XeXmo0MmLhmlSgPHAEIw3UKADddB-NcE-Tg_NVZZEI'); /* Buttonun içindeki görsel */
+          background-size: cover;
+          background-opacity: 0.5;
+          color: black;
+          font-weight: 700;
+          text-align: center;
+          line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
+          background-color: rgba(155, 155, 155, 0.7);
+          font-size: .9em;
         }
         video {
             position: fixed;
@@ -89,8 +100,8 @@
       <div class="button-container">
             <button class="round-button" onclick="alert('Button 1 clicked')">Linkedin</button>
             <button class="round-button" onclick="alert('Button 2 clicked')">Behance</button>
-            <button class="round-button" onclick="alert('Button 2 clicked')">Sketchfab</button>
-        <button class="round-button" onclick="alert('Button 2 clicked')">ArtStation</button>
+            <button class="round-button" onclick="alert('Button 2 clicked')">Sketchfab </button>
+        <button class="round-button" onclick="alert('Button 2 clicked')">YouTube</button>
         </div>
     </main>
 </body>
