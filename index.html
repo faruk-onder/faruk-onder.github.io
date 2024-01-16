@@ -17,7 +17,7 @@
             height: 75vh;
             overflow: hidden;
             position: relative;
-          background-color: #333333;
+            background-color: #333333;
         }
 
         main {
@@ -44,54 +44,56 @@
             font-weight: 400;
             font-size: 2em;
             margin: 0;
-          margin-bottom: 50px;
+            margin-bottom: 50px;
             color: white;
         }
-  .button-container {
+        .button-container {
             margin-top: 20px;
             display: flex;
             justify-content: center;
-    flex-wrap: nowrap;
+            flex-wrap: nowrap;
         }
 
         .round-button {
-          position: relative;
+            position: relative;
             display: inline-block;
             margin:0 10px;
             width: 80px;
             height: 80px;
-           line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
+            line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
             text-align: center; /* Metni yatayda ortala */
             border-radius: 90%;
             background-color: #222222; /* Renk: Mavi (Örnek renk) */
             color: #fff;
             font-size: 1em;
-           overflow: hidden; 
+            overflow: hidden; 
             cursor: pointer;
             border: none; outline: 2px solid white; transition: background-color 0.3s ease, transform 0.3s ease; /* Transform ve arka plan renk geçişleri ekleniyor */
         }
 
         .round-button:hover {
-          content: "";
+            content: "";
             background-color: black; /* Hover rengi: Daha koyu mavi (Örnek renk) */
             transform: scale(1.2); /* Hover durumunda 1.2 kat büyüt */
-           background-image: url('https://media.licdn.com/dms/image/D4D03AQG6Pnfp7XgwMQ/profile-displayphoto-shrink_200_200/0/1691618316768?e=1710979200&v=beta&t=-XeXmo0MmLhmlSgPHAEIw3UKADddB-NcE-Tg_NVZZEI'); /* Buttonun içindeki görsel */
-          background-size: cover;
-          background-opacity: 0.5;
-          color: white;
-          font-weight: 700;
-           overflow: hidden; 
-          text-align: center;
-          line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
-          background-color: rgba(155, 155, 155, 0.7);
-          font-size: .9em;
-          transition: transform 0.3s ease;
-          transform-origin: center;
+            background-image: url('https://media.licdn.com/dms/image/D4D03AQG6Pnfp7XgwMQ/profile-displayphoto-shrink_200_200/0/1691618316768?e=1710979200&v=beta&t=-XeXmo0MmLhmlSgPHAEIw3UKADddB-NcE-Tg_NVZZEI'); /* Buttonun içindeki görsel */
+            background-size: cover;
+            background-opacity: 0.5;
+            color: white;
+            font-weight: 700;
+            overflow: hidden; 
+            text-align: center;
+            line-height: 80px; /* Metni dikeyde ortalamak için line-height ekleniyor */
+            background-color: rgba(155, 155, 155, 0.7);
+            font-size: .9em;
+            transition: transform 0.3s ease;
+            transform-origin: center;
         }
+        
       .round-button span {
             position: relative;
             z-index: 1;
         }
+        
       .round-button::before {
             content: "";
             position: absolute;
@@ -110,14 +112,14 @@
         .round-button:hover::before {
             transform: scale(1); /* Hover durumunda arka planı normal boyuta getir */
         }
+        
         .round-button a {
             text-decoration: none; /* Link altını çizme özelliği kaldırılıyor */
             color: inherit; /* Link rengi, ebeveyn elementten miras alınıyor */
             display: block; /* Linki blok öğe olarak ayarla, tıklama alanını genişletir */
             height: 100%; /* Linkin tam yüksekliğini kaplamasını sağlar */
         }
-
-      
+        
         video {
             position: fixed;
             top: 0;
@@ -134,13 +136,12 @@
 <body>
     <video autoplay muted loop>
         <source src="https://assets.mixkit.co/videos/preview/mixkit-a-young-graphic-designer-is-working-on-a-graphic-typography-50602-large.mp4" type="video/mp4">
-        Your browser does not support the video tag.
     </video>
 
     <main>
         <h1>Faruk Önder</h1>
         <h2>3D Artist & Graphic Designer</h2>
-      <div class="button-container">
+        <div class="button-container">
             <button class="round-button"><a href="https://www.linkedin.com/in/faruk-onder/">Linkedin</a></button>
             <button class="round-button"><a href="https://www.behance.net/farukonder">Behance</a></button>
             <button class="round-button"><a href="https://sketchfab.com/fhillar">Sketchfab</a></button>
