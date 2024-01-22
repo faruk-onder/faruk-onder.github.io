@@ -16,7 +16,6 @@ main {
     z-index: 1;
     color: #fff;
     position: fixed;
-    top: 15%;
     left: 50%;
     transform: translate(-50%, +50%);
 }
@@ -38,6 +37,27 @@ h2 {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+/* Media Query'ler ile Responsive Ayarlar */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 4em; /* Mobil ekranlar için başlık boyutunu küçült */
+    }
+
+    h2 {
+        font-size: .5em; /* Mobil ekranlar için başlık boyutunu küçült */
+    }
+}
+
+/* Daha fazla media query ekleyebilirsiniz */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 5em; /* Tablet boyutları için başlık boyutunu ayarla */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Tablet boyutları için başlık boyutunu ayarla */
     }
 }
 
