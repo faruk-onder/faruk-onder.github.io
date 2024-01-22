@@ -1,4 +1,6 @@
 body {
+    transform: scale(.85);
+    transform-origin: top;
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     padding: 250px;
