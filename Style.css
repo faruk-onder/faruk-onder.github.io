@@ -678,6 +678,19 @@ u {
     text-decoration: none;
 }
 
+/*-WORK---------------------------------------------------------*/
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+}
+
+.work-card {
+    display: grid;
+    gap: 4px;
+}
+
 /*-CONTACT---------------------------------------------------------*/
 
 .contact-tab {
