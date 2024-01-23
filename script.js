@@ -14,19 +14,17 @@ let /** {Boolean | String} */ isDark = window.matchMedia("(prefers-color-scheme:
 
 if (sessionStorage.getItem("theme")) {
     $HTML.dataset.theme = sessionStorage.getItem("theme");
-}
-
-else {
+} else {
     $HTML.dataset.theme = isDark ? "dark" : "light";
 }
 
 const changeTheme = () => {
-    $HTML.dataset.theme = sessionStorage.getItem("theme") === "light" ? "dark" :
-    "light";
+    $HTML.dataset.theme = $HTML.dataset.theme === "light" ? "dark" : "light";
     sessionStorage.setItem("theme", $HTML.dataset.theme);
 }
 
 $themeBtn.addEventListener("click", changeTheme);
+
 
 /*
  * TAB
@@ -41,7 +39,8 @@ $tabBtn.forEach(item => {
         lastActiveTab.classList.remove("active");
         lastActiveTabBtn.classList.remove("active");
         
-        const /** {NodeElement} */ $tabContent = document.querySelector('[data-tab-content="${item.dataset.tabBtn}"]');
+        const /** {NodeElement} */ $tabContent = document.querySelector(`[data-tab-content="${item.dataset.tabBtn}"]`);
+
         $tabContent.classList.add("active");
         this.classList.add("active");
         
