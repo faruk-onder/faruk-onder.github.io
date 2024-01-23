@@ -37,7 +37,7 @@ let /** {NodeElement} */ [lastActiveTab] = document.querySelectorAll("[data-tab-
 let /** {NodeElement} */ [lastActiveTabBtn] = $tabBtn;
 
 $tabBtn.forEach(item => {
-    item.addEventListener("click", function(){
+    item.addEventListener("click", function() {
         lastActiveTab.classList.remove("active");
         lastActiveTabBtn.classList.remove("active");
         
