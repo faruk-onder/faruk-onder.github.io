@@ -368,6 +368,8 @@ body {
 .section-title { margin-block-end: 16px;}
 
 
+
+
 /*-BUTTON--------------------------------------------------------*/
 
 
@@ -588,7 +590,7 @@ body {
 
 .project-list {
     display: grid;
-    grid-templete-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 12px;
 }
 
@@ -596,7 +598,7 @@ body {
 
 .resume-tab .list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
     margin-block-end: 28px;
 }
