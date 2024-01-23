@@ -678,6 +678,10 @@ u {
     text-decoration: none;
 }
 
+li {
+    list-style: square;
+}
+
 /*-WORK---------------------------------------------------------*/
 
 .work-list {
