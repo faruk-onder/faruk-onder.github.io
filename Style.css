@@ -447,7 +447,7 @@ body {
     margin-block-start: 24px;
     margin-inline: 16px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     border-block-end: 1px solid var(--outline-variant);
 }
@@ -634,6 +634,14 @@ body {
 /*-PROJECT---------------------------------------------------------*/
 
 .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+}
+
+/*-My CPI Works---------------------------------------------------------*/
+
+.cpi-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 12px;
