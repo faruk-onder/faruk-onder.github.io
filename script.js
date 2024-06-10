@@ -79,3 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         animate(); // Start the animation loop
     });
+
+const links = document.querySelectorAll('a');
+links.forEach(links => {
+    link.setAttribute('target', '_blank');
+})
