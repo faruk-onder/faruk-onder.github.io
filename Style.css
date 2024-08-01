@@ -273,7 +273,6 @@ body {
     font-weight: var(--weight-medium);
     line-height: 20px;
     letter-spacing: 0.1px;
-    font-weight: bold;
 }
 
 .body-large {
@@ -507,6 +506,8 @@ body {
 .chip .material-symbols-outlined {
     font-size: 1.8rem;
 }
+
+
 
 /**
 * CARD

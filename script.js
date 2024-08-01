@@ -4,6 +4,8 @@
  */
 "use strict";
 
+import * as THREE from 'three';
+
 /**
  * Light and Dark Mode
 */
@@ -21,7 +23,7 @@ if (sessionStorage.getItem("theme")) {
 const changeTheme = () => {
     $HTML.dataset.theme = $HTML.dataset.theme === "light" ? "dark" : "light";
     sessionStorage.setItem("theme", $HTML.dataset.theme);
-}
+};
 
 $themeBtn.addEventListener("click", changeTheme);
 
