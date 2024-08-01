@@ -4,7 +4,6 @@
  */
 "use strict";
 
-import * as THREE from 'three';
 
 /**
  * Light and Dark Mode
