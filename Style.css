@@ -513,6 +513,7 @@ body {
 * CARD
 */
 
+
 .card {
     background-color: var(--surface-container-low);
     border-radius: var(--radius-medium);
@@ -600,6 +601,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.resume-item a:hover{
+    background-color: var(--surface-container-low);
+}
+
+.resume-bottom-list li:hover {
+    --state-layer-bg: var(--on-surface)
 }
 
 /*-ABOUT-CARD---------------------------------------------------------*/
