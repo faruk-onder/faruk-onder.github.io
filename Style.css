@@ -3,6 +3,7 @@
     /**
     *COLORS
     */
+    --surface-label: #6F4BF2;
 
     /* light theme */
     --background-light: hsl(293, 100%, 98%);
@@ -17,6 +18,7 @@
     --on-primary-light: hsl(0, 0%, 100%);
     --outline-light: hsl(270, 4%, 47%);
     --outline-variant-light: hsl(270, 11%, 79%);
+    
 
     /* dark theme */
     --background-dark: hsl(260, 14%, 8%);
@@ -38,7 +40,7 @@
 
     /* font-family */
     --font-primary: 'Open Sans', sans-serif;
-    --font-secondary: 'Noto Sans', sans-serif;
+    --font-secondary: 'montserrat';
 
     /* font-size */
     --base-font-size: 62.5%;
@@ -741,10 +743,22 @@ body {
 }
 .resume-bottom-item a {
 }
-
-.resume-bottom-item .icon {
-    height: 28px;
+.label-bg {
+    background-color: var(--surface-label);
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content;
 }
+
+
+/*
+.resume-bottom-item .icon {
+    height: 56px;
+}
+    */
 
 u {
     text-decoration: none;
