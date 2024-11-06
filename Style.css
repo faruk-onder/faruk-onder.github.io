@@ -722,6 +722,11 @@ body {
 
 .resume-bottom-list {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+.resume-bottom-list-ref {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 12px;
 }
@@ -733,6 +738,8 @@ body {
     gap: 8px;
     padding: 12px;
     border-radius: var(--radius-small);
+}
+.resume-bottom-item a {
 }
 
 .resume-bottom-item .icon {
