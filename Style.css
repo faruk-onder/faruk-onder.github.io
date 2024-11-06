@@ -375,6 +375,14 @@ body {
     aspect-ratio: var(--witdh) / var(--height);
 }
 
+.img-holder-yt {
+    aspect-ratio: var(--witdh) / var(--height);
+}
+.img-holder-yt img {
+    border-radius: 5px;
+}
+
+
 .icon-overlay {
     position: absolute;
     bottom: 10px;
