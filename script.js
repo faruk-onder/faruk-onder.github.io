@@ -115,7 +115,9 @@ const gameIcons = {
     "Car Repair Shooter" : "images/appicon/defaul_icon.png",
     "Fish Clonner" : "images/appicon/defaul_icon.png",
     "Juggling Master" : "images/appicon/defaul_icon.png",
-    "" : ""
+    "Marble Gun Runner" : "https://play-lh.googleusercontent.com/OTDAVZ-1e7250VonZ_D39Tc_N5Iem7P11_2ZaxbmjNeRxBKZH_M6RmYTYkIX6ILDFUE=s256",
+    "Bus Shelters Manager" : "https://play-lh.googleusercontent.com/6Sw4D5upsYNpdreA35QfoN-uRzDEWZr8xG1jQrNVC0QurJlAH1RR1izO_lVexbVISGV1=w240-h480",
+    "Military Idle" : "https://play-lh.googleusercontent.com/S-F-4lRWw9Plkn1svstE5T52PfSBDvWs8pjHbSa7uXylVTjH6R29jht4LdVj5I7E5oM=w240-h480"
 };
 
 
@@ -214,6 +216,17 @@ const gameLinks = {
     "Fish Clonner": {
     },
     "Juggling Master": {
+    },
+    "Marble Gun Runner": {
+        google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MarbleGunRunner"
+    },
+    "Bus Shelters Manager": {
+        google: "https://play.google.com/store/apps/details?id=com.BoomCodes.BusSheltersManager",
+        apple: "https://apps.apple.com/us/app/bus-shelter-manager/id1624674703"
+    },
+    "Military Idle": {
+        google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MilitaryIdle",
+        apple: "https://apps.apple.com/us/app/military-idle/id6636485345"
     },
 };
 
