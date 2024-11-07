@@ -1020,6 +1020,15 @@ li {
     background-color: orangered;
     color: white;
 }
+@media (max-width: 468px) {
+    .card img {
+        width: 99%;
+    }
+    .cpi-list iframe{
+        width: 99%;
+        border-radius: 5px;
+    }
+}
 
 @media (max-width: 768px) {
     .popup-content {
@@ -1048,5 +1057,24 @@ li {
     }
     #close {
         margin-left: -15px;        
+    }
+    .card img {
+        width: 99%;
+    }
+    .cpi-list iframe{
+        width: 99%;
+        border-radius: 5px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .card img {
+        width: 99%;
+    }
+
+    .cpi-list iframe{
+        width: 99%;
+        border-radius: 5px;
     }
 }
