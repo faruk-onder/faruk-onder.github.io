@@ -1020,6 +1020,7 @@ li {
     background-color: orangered;
     color: white;
 }
+
 @media (max-width: 468px) {
     .card img {
         width: 99%;
