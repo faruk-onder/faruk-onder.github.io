@@ -112,9 +112,9 @@ const gameIcons = {
     "Junkyard Spinner" : "images/appicon/Car-Destroyer-Icon.png",
     "Build It Up" : "images/appicon/BIUp-AppIcon.png",
     "Target Ball" : "images/appicon/TargetBall.jpg",
-    "Car Repair Shooter" : "",
-    "Fish Clonner" : "",
-    "Juggling Master" : "",
+    "Car Repair Shooter" : "images/appicon/defaul_icon.png",
+    "Fish Clonner" : "images/appicon/defaul_icon.png",
+    "Juggling Master" : "images/appicon/defaul_icon.png",
     "" : ""
 };
 
