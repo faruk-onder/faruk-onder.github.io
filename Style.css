@@ -907,6 +907,7 @@ li {
     .hero .container {
         grid-template-columns: 0.2fr 1fr;
     }
+
 }
 
 
@@ -957,6 +958,8 @@ li {
     border-radius: 10px;
     gap: 15px;
 }
+
+
 
 .text-content {
     display: flex;
@@ -1016,4 +1019,34 @@ li {
 .gameApple:hover {
     background-color: orangered;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .popup-content {
+        border: 2px solid var(--surface-label);
+        display: flex;
+        background-color: var(--on-primary);
+        margin: 50% auto;
+        padding: 5px;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 10px;
+        gap: 5px;
+    }
+    .popup-content p {
+        margin-top: -15px;
+        font-size: small;
+    }
+    #gameTitle {
+        max-width: 95%;
+    }
+    .gameGoogle{
+        height: 48px;
+    }
+    .gameApple {
+        height: 48px;
+    }
+    #close {
+        margin-left: -15px;        
+    }
 }
