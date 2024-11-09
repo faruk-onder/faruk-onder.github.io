@@ -125,9 +125,9 @@ const gameLinks = {
     "My Snack Empire": {
         google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MySnackEmpire&hl=en",
         apple: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr",
-        behance: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr",
-        sketchfab: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr",
-        artstation: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr" 
+        behance: "",
+        sketchfab: "",
+        artstation: "" 
     },
     "My Pastry Shop": {
         google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MyPastryShop&hl=en",
