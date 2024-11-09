@@ -949,17 +949,23 @@ li {
 
 .popup-content {
     border: 2px solid var(--surface-label);
+    position: relative;
     display: flex;
     background-color: var(--on-primary);
     margin: 15% auto;
     padding: 20px;
     width: 60%;
-    max-width: 500px;
+    max-width: 550px;
     border-radius: 10px;
     gap: 15px;
 }
 
-
+#gameIcon {
+    width: 128px; 
+    height: 128px; 
+    border-radius: var(--radius-small);
+    border: 3px solid var(--on-background);
+}
 
 .text-content {
     display: flex;
@@ -967,7 +973,9 @@ li {
 }
 
 #close {
-    float: right;
+    position: absolute;
+    top: 12%;
+    right: 3%;
     color: var(--on-background);
     font-size: 28px;
     font-weight: bold;
@@ -1021,6 +1029,64 @@ li {
     color: white;
 }
 
+.gameBehance {
+    height: 32px;
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-inline: 16px;
+    border-radius: var(--radius-small); 
+    background-color: black;
+    color: white;
+    --state-layer-bg: var(--on-surface-variant);
+}
+
+.gameBehance:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.gameSketchfab {
+    height: 32px;
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-inline: 16px;
+    border-radius: var(--radius-small); 
+    background-color: black;
+    color: white;
+    --state-layer-bg: var(--on-surface-variant);
+}
+
+.gameSketchfab:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.gameArtStation {
+    height: 32px;
+    white-space: nowrap;
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-inline: 16px;
+    border-radius: var(--radius-small); 
+    background-color: black;
+    color: white;
+    --state-layer-bg: var(--on-surface-variant);
+}
+
+.gameArtStation:hover {
+    background-color: orangered;
+    color: white;
+}
+
 @media (max-width: 468px) {
     .card img {
         width: 99%;
@@ -1028,6 +1094,15 @@ li {
     .cpi-list iframe{
         width: 99%;
         border-radius: 5px;
+    }
+    .gameBehance {
+        display: none;
+    }
+    .gameSketchfab{
+        display: none;
+    }
+    .gameArtStation {
+        display: none;
     }
 }
 
@@ -1066,6 +1141,7 @@ li {
         width: 99%;
         border-radius: 5px;
     }
+    
     
 }
 

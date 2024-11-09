@@ -549,21 +549,26 @@
                     </section>
                    <!--
                 PopUp Yapısı
-                -->
-                <div id="gamePopup" class="popup" style="display: none;">
-                    <div class="popup-content">                    
-                        <img id="gameIcon" src="" alt="Game Icon" style="width: 128px; height: 128px; border-radius: var(--radius-small);">
+                --><div id="gamePopup" class="popup" style="display: none;">
+                    <div class="popup-content">        
+                        <img id="gameIcon" src="" alt="Game Icon">
                         <div class="text-contet">
-                            <h2 id="gameTitle"></h2><br>
-                            <p>Oyun hakkında daha fazla bilgi edinmek için aşağıdaki seçenekleri keşfedin.</p>
-                            <div id="gameStore" class="store">
+                            
+                        <span id="close" class="material-symbols-outlined" aria-hidden="true" onclick="closePopup()">close</span>       
+                            <h2 id="gameTitle"></h2>                            
+                            <!-- <p>Oyun hakkında daha fazla bilgi edinmek için aşağıdaki seçenekleri keşfedin.</p> -->
+                            <div id="gameStore">
                                 <a href="" class="gameGoogle" style="margin-top: 10px;" target="_blank" rel="noreferrer noopener">Google Play</a>
                                 <a href="" class="gameApple" style="margin-top: 10px;" target="_blank" rel="noreferrer noopener">App Store</a>
                             </div>
-                        </div>
-                        <span id="close" class="material-symbols-outlined" aria-hidden="true" onclick="closePopup()">close</span>
-                    </div>
-                </div>
+                            <div id="gameStore">
+                                <a href="" class="gameBehance" style="margin-top: 10px;" target="_blank" rel="noreferrer noopener">Behance</a>
+                                <a href="" class="gameSketchfab" style="margin-top: 10px;" target="_blank" rel="noreferrer noopener">Sketchfab</a>                                
+                                <a href="" class="gameArtStation" style="margin-top: 10px;" target="_blank" rel="noreferrer noopener">Art Station</a>
+                            </div>                            
+                        </div>                        
+                    </div>                
+                </div>                
                 <!--
                 -#PROJECT - YouTube
                 -->

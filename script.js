@@ -124,7 +124,10 @@ const gameIcons = {
 const gameLinks = {
     "My Snack Empire": {
         google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MySnackEmpire&hl=en",
-        apple: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr"
+        apple: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr",
+        behance: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr",
+        sketchfab: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr",
+        artstation: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr" 
     },
     "My Pastry Shop": {
         google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MyPastryShop&hl=en",
@@ -226,18 +229,21 @@ const gameLinks = {
     },
     "Military Idle": {
         google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MilitaryIdle",
-        apple: "https://apps.apple.com/us/app/military-idle/id6636485345"
+        apple: "https://apps.apple.com/us/app/military-idle/id6636485345",
     },
 };
-
 
 function openPopup(gameName) {
     const iconUrl = gameIcons[gameName];
     const links = gameLinks[gameName];
+
     document.getElementById("gameTitle").innerText = gameName;
     document.getElementById("gameIcon").src = iconUrl;
     document.querySelector(".gameGoogle").href = links.google;
     document.querySelector(".gameApple").href = links.apple;
+    document.querySelector(".gameBehance").href = links.behance;
+    document.querySelector(".gameSketchfab").href = links.sketchfab;
+    document.querySelector(".gameArtStation").href = links.artstation;
     document.getElementById("gamePopup").style.display = "block";
 }
 
@@ -285,6 +291,36 @@ function openPopup(gameName) {
     } else {
         appleButton.style.position = "absolute";
         appleButton.style.opacity = "0";
+    }
+
+    const behanceButton = document.querySelector(".gameBehance");
+    if (links.behance) {
+        behanceButton.href = links.behance;
+        behanceButton.style.position = "relative";
+        behanceButton.style.opacity = "1";
+    } else {
+        behanceButton.style.position = "absolute";
+        behanceButton.style.opacity = "0";
+    }
+
+    const artstationButton = document.querySelector(".gameArtStation");
+    if (links.behance) {
+        artstationButton.href = links.behance;
+        artstationButton.style.position = "relative";
+        artstationButton.style.opacity = "1";
+    } else {
+        artstationButton.style.position = "absolute";
+        artstationButton.style.opacity = "0";
+    }
+
+    const sketchfabButton = document.querySelector(".gameSketchfab");
+    if (links.behance) {
+        sketchfabButton.href = links.behance;
+        sketchfabButton.style.position = "relative";
+        sketchfabButton.style.opacity = "1";
+    } else {
+        sketchfabButton.style.position = "absolute";
+        sketchfabButton.style.opacity = "0";
     }
 
     document.getElementById("gamePopup").style.display = "block";
