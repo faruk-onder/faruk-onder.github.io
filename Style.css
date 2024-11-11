@@ -4,6 +4,10 @@
     *COLORS
     */
     --surface-label: #6F4BF2;
+    --surface-portfolio-bg-disabled: #F8D7DA;
+    --surface-portfolio-disabled: #721C24;
+    --surface-portfolio-hover-disabled: #F5C6CB;
+    
 
     /* light theme */
     --background-light: hsl(293, 100%, 98%);
@@ -18,6 +22,9 @@
     --on-primary-light: hsl(0, 0%, 100%);
     --outline-light: hsl(270, 4%, 47%);
     --outline-variant-light: hsl(270, 11%, 79%);
+    --surface-portfolio-bg-light: #F2F9F2;
+    --surface-portfolio-light: #028901;
+    --surface-portfolio-hover-light: #DCFFDD;
     
 
     /* dark theme */
@@ -33,6 +40,9 @@
     --on-primary-dark: hsl(259, 58%, 28%);
     --outline-dark: hsl(264, 5%, 58%);
     --outline-variant-dark: hsl(264, 7%, 29%);
+    --surface-portfolio-bg-dark: #F2F6FF;
+    --surface-portfolio-dark: #0057FF;
+    --surface-portfolio-hover-dark: #D9E6FF;
 
     /**
     *TYPOGRAPHY
@@ -111,6 +121,9 @@
     --on-primary: var(--on-primary-light);
     --outline: var(--outline-light);
     --outline-variant: var(--outline-variant-light);
+    --surface-portfolio-bg: var(--surface-portfolio-bg-light);
+    --surface-portfolio: var(--surface-portfolio-light);
+    --surface-portfolio-hover: var(--surface-portfolio-hover-light);
 }
 
 [data-theme="dark"] {
@@ -128,6 +141,9 @@
     --on-primary: var(--on-primary-dark);
     --outline: var(--outline-dark);
     --outline-variant: var(--outline-variant-dark);
+    --surface-portfolio-bg: var(--surface-portfolio-bg-dark);
+    --surface-portfolio: var(--surface-portfolio-dark);
+    --surface-portfolio-hover: var(--surface-portfolio-hover-dark);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -542,8 +558,29 @@ body {
     font-size: 1.8rem;
 }
 
+/*-delete-disabled*/
+.chips {
+    height: 32px;
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-inline: 16px;
+    border: 1px solid var(--surface-portfolio-disabled);
+    border-radius: var(--radius-small);
+    background-color: var(--surface-portfolio-bg-disabled);
+    color: var(--surface-portfolio-disabled);
+    --state-layer-bg: var(--on-surface-variant);
+}
 
+.chips .material-symbols-outlined {
+    font-size: 1.8rem;
+}
 
+.chips:hover {
+    background-color: var(--surface-portfolio-hover-disabled);
+}
 /**
 * CARD
 */
