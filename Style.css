@@ -567,10 +567,10 @@ body {
     align-items: center;
     gap: 8px;
     padding-inline: 16px;
-    border: 1px solid var(--surface-portfolio-disabled);
+    border: 1px solid var(--surface-portfolio);
     border-radius: var(--radius-small);
-    background-color: var(--surface-portfolio-bg-disabled);
-    color: var(--surface-portfolio-disabled);
+    background-color: var(--surface-portfolio-bg);
+    color: var(--surface-portfolio);
     --state-layer-bg: var(--on-surface-variant);
 }
 
@@ -579,7 +579,7 @@ body {
 }
 
 .chips:hover {
-    background-color: var(--surface-portfolio-hover-disabled);
+    background-color: var(--surface-portfolio-hover);
 }
 /**
 * CARD
@@ -795,8 +795,7 @@ body {
     padding: 12px;
     border-radius: var(--radius-small);
 }
-.resume-bottom-item a {
-}
+
 .label-bg {
     background-color: var(--surface-label);
     color: white;
