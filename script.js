@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* POPUP */
 const gameIcons = {
+    "Idle Food Fest!" : "images/appicon/IdleFoodFest.png",
+    "Prism Puzzle" : "images/appicon/PrismPuzzle.png",
     "My Snack Empire" : "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f0/0a/3b/f00a3b55-9986-39ec-7c07-9523defa156e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp",
     "My Pastry Shop" : "https://play-lh.googleusercontent.com/CUIirznC2xmgk-KsRMtm2VSRh2DiACviaI8YgdE5c05lAD_c8BuHRioIB6bueAcZYQ=w240-h480",
     "My Snack Kingdom" : "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/c5/ef/4dc5effb-beaf-3805-8030-b081f9c6704b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp",
@@ -122,6 +124,12 @@ const gameIcons = {
 
 
 const gameLinks = {
+    "Idle Food Fest!": {
+        apple: "https://apps.apple.com/us/app/idle-food-fest/id6680151213"
+    },
+    "Prism Puzzle": {
+        apple: "https://apps.apple.com/us/app/prism-puzzle/id6692616475"
+    },
     "My Snack Empire": {
         google: "https://play.google.com/store/apps/details?id=com.BoomCodes.MySnackEmpire&hl=en",
         apple: "https://apps.apple.com/tr/app/my-snack-empire/id6736908202?l=tr",
