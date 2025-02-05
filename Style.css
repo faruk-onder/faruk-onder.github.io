@@ -18,7 +18,7 @@
     --surface-container-low-light: #E5E5DA;
     --surface-container-light: #E5E5DA;
     --surface-bright-light: #E5E5DA;
-    --primary-light: #2B3D1F;
+    --primary-light: purple; /* Date */
     --on-primary-light: #E5E5DA;
     --outline-light: #2B3D1F;
     --outline-variant-light: hsl(270, 11%, 79%);
@@ -28,13 +28,13 @@
      
 
     /* dark theme */
-    --background-dark: hsl(260, 14%, 8%);
-    --on-background-dark: hsl(280, 17%, 90%);
-    --surface-dark: hsl(260, 14%, 8%);
-    --on-surface-dark: hsl(280, 17%, 90%);
-    --on-surface-variant-dark: hsl(270, 11%, 79%);
-    --surface-container-low-dark: hsl(264, 8%, 12%);
-    --surface-container-dark: hsl(257, 10%, 14%);
+    --background-dark: #171821;
+    --on-background-dark: white;
+    --surface-dark: #171821;
+    --on-surface-dark: white;
+    --on-surface-variant-dark: white;
+    --surface-container-low-dark: #21222D;
+    --surface-container-dark: #21222D;
     --surface-bright-dark: hsl(270, 5%, 23%);
     --primary-dark: hsl(258, 100%, 87%);
     --on-primary-dark: hsl(259, 58%, 19%);
