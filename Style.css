@@ -465,6 +465,15 @@ body {
     align-items: center;
     padding-inline: 16px;
     z-index: 4;
+    padding: 40px;
+}
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(15deg);
+    transition: transform 0.5s ease;
 }
 
 [data-theme="dark"] .logo .light,
