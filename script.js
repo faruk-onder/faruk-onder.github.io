@@ -333,3 +333,13 @@ function openPopup(gameName) {
 
     document.getElementById("gamePopup").style.display = "block";
 }
+
+window.addEventListener("scroll", function () {
+    let logo = document.querySelector(".logo");
+    if (!logo) return;
+
+    let scrollY = window.scrollY;
+    let rotateAngle = Math.min(scrollY / 10, 30); //
+
+    logo.style.transform = `rotate(${rotateAngle}deg)`;
+});
