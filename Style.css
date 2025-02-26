@@ -465,7 +465,7 @@ body {
     align-items: center;
     padding-inline: 16px;
     z-index: 4;
-    padding: 40px;
+    padding-top: 20px;
 }
 .logo {
     transition: transform 0.3s ease;
