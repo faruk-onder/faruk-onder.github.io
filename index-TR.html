@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/favicon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 </head>
@@ -154,7 +155,7 @@
                         </button>
                         -->
                         <button class="tab-btn" data-tab-btn="work">
-                            <span class="tab-text title-small">Projeler</span>
+                            <span class="tab-text title-small">Projeler /Blog</span>
                             <span class="state-layer"></span>
                         </button>
 
@@ -355,7 +356,21 @@
                                 </li>
                             </ul>
                             <br>
-                            <h1 class="section-title title-large"><b>Oyunlar</b></h1>
+                            <h1 class="section-title title-large"><b>Blog</b></h1>
+                            <section class="blog-card">
+                            <div class="card">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="images/ProjectBlog/Project-Blog-1.png">
+                                            <div class="overlay-text">Efsanevi Gladyatör Sahnesi – 3D Modelleme & Dokulandırma</div>
+                                            <a class="hover-button"href="blog.html"><span class="material-symbols-outlined" style="font-size: 18px">book_5</span>İncele!</a>
+                                        </div>
+                                        <div class="swiper-slide" style="opacity: 0;"><img src="images/ProjectBlog/ExploreMore.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </section>
+                            <h1 class="section-title title-large" style="margin-top: 15px;"><b>Oyunlar</b></h1>
                             <ul class="resume-bottom-list-ref" style="margin-bottom: 8px; border: 2px solid #dc3545; border-radius: var(--radius-small);">
                                 <li class="resume-bottom-item">
                                     <div class="label-small card-subtitle" style="font-size: 10px">
@@ -879,6 +894,16 @@
     Custom js Link
     -->
     <script src="./script.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 2.5, 
+        spaceBetween: 12, 
+        loop: false, 
+        navigation: true,
+        pagination: { el: ".swiper-pagination", clickable: true }
+      });
     </script>
 </body>
 

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    Meta Tags
+    -->
+    <title>Faruk Önder - a 3D Game Artist and Graphic Designer Portfolio</title>
+    <meta name="title" content="Faruk Önder - a 3D Artist and Graphic Designer Portfolio">
+    <meta name="description" content="this is a personal portfolio">
+    <!--
+    Link Tags
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/favicon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+
+
+<body>
+    <!--
+        -#Top Bar
+    -->
+    <header class="topbar">
+        <a href="https://faruk-onder.github.io/" class="logo">
+            <img src="./images/NewLogo.png" alt="ARTfolio" width="64" height="64" class="dark">
+            <img src="./images/NewLogo.png" alt="ARTfolio" width="64" height="64" class="light">
+        </a>
+
+        <button class="icon-btn theme-btn" data-theme-btn>
+            <span class="material-symbols-outlined dark" aria-hidden="true">dark_mode</span>
+            <span class="material-symbols-outlined light" aria-hidden="true">light_mode</span>
+
+            <span class="state-layer">
+
+            </span>
+
+        </button>
+
+
+    </header>
+
+    <main>
+
+        <article>
+            <section class="section hero">
+                <div class="container">
+                    <figure class="hero-banner img-holder" style="--width:240; --height:240;">
+                        <img src="images/OpenTheWork.png" width="240" height="240" alt="Faruk Önder">
+                        <a href="mailto:me.farukonder@gmail.com">
+                            <img src="images/AddTeam.png" alt="OpenTheWork" class="icon-overlay">
+                        </a>
+                        <!--
+                        <div class="hover-image">
+                            <img src="images/redpanda-1.png" width="240" height="240" class="img-hover">
+                        </div>
+                        -->
+                    </figure>
+
+                    <div class="hero-content">
+                        <span class="label-large section-subtitle">3D Game Artist & Graphic Designer</span>
+                        <h1 class="display-small" style="font-weight: 800;">Faruk Önder</h1>
+                        <p class="body-large section-text">Hello! I'm a 3D modeling artist and I'm passionate about working in this field. I'm here on to share this exciting world with you.</p>
+                        <div class="btn-wrapper">
+                            <a href="https://drive.google.com/file/d/1RIppK-bTOal9ZrxuPb2mSQP71LkvZL5i/view?usp=sharing" class="chips" target="_blank" rel="noreferrer noopener">
+                                <span class="material-symbols-outlined" aria-hidden="true"> folder_eye </span>
+                                <span class="label-large">Portfolio</span>
+                                <div class="state-layer"></div>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1Q_i0ip0N1rMync31jGjRkVjo_z1VVwWh/view?usp=sharing" class="chips" target="_blank" rel="noreferrer noopener">
+                                <span class="material-symbols-outlined" aria-hidden="true"> download </span>
+                                <span class="label-large">Resume</span>
+                                <div class="state-layer"></div>
+                            </a>
+                            <a href="mailto:me.farukonder@gmail.com" class="chip">
+                                <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
+                                <span class="label-large">me.farukonder@gmail.com</span>
+                                <div class="state-layer"></div>
+                            </a> <!--
+                            <a href="./index-TR.html" class="chip">
+                                <span class="material-symbols-outlined" aria-hidden="true"> translate </span>
+                                <span class="label-large">Türkçe</span>
+                                <div class="state-layer"></div>
+                            </a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--
+            -#MAIN CONTENT
+            -->
+                <div class="blog-tabs">
+                    <!--
+                -#PRIMARY TABS
+                -->
+                    <div class="primary-tabs">
+
+                        <button class="tab-btn">
+                            <a href="index.html?tab=work">
+                            <span class="tab-text title-small">Back (Project)</span>
+                            <span class="state-layer"></span>
+                        </a>
+                        </button>
+
+                        <button class="tab-btn active" data-tab-btn="gladiator">
+                            <span class="tab-text title-small">Legacy: Gladiator!</span>
+                            <span class="state-layer"></span>
+                        </button>
+                    </div>
+
+
+                <section class="sketchfab-embed section tab-content gladiator active" data-tab-content="gladiator">
+                    <div class="container">
+                        <h2 class="card-title title-medium"><b>Temple of the Honored Gladiator!</b></h2>
+                        <p class="body-medium card-text">This stylized 3D diorama showcases an ancient gladiator standing in a grand, 
+                            timeworn temple. The model was sculpted in Blender as a high-poly mesh, then optimized 
+                            into a low-poly version for efficient use. High-resolution details were baked and textured 
+                            in Substance 3D Painter, enhancing the realism and depth of the scene. The result is
+                             a visually rich and game-ready asset, balancing performance and artistry.</p>
+                        <div class="card">
+                            <div class="sketchfab-embed-wrapper"> 
+                                <iframe title="Temple of the Honored Gladiator" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/13d2c69e7c5642009594b591aabc56ec/embed?autostart=1&annotation_cycle=5&ui_theme=dark"> </iframe> 
+                            </div>
+                            <div class="blog-image">
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/086/541/469/large/faruk-onder-fhillar-faruk-onder-portfolio-substance-painter-17.jpg?1743455198">
+                                <img src="https://cdna.artstation.com/p/assets/images/images/086/541/474/large/faruk-onder-fhillar-faruk-onder-portfolio-substance-painter-18.jpg?1743455204">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+        </article>
+
+    </main>
+    <!--
+    -#fOOTER
+    -->
+    <footer class="footer">
+        <div class="container">
+            <p class="body-medium">Copyright 2023.</p>
+        </div>
+    </footer>
+
+
+    <!--
+    Custom js Link
+    -->
+    <script src="./script.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 2.5, 
+        spaceBetween: 12, 
+        loop: false, 
+        navigation: true,
+        pagination: { el: ".swiper-pagination", clickable: true }
+      });
+    </script>
+</body>
+
+</html>
