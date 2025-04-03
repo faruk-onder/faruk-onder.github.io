@@ -103,7 +103,7 @@
     */
 
     --section-padding: 24px;
-    --top-bar-height: 64px;
+    --top-bar-height: 95px;
 
 }
 
@@ -468,13 +468,16 @@ body {
     width: 100%;
     height: var(--top-bar-height);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-inline: 16px;
     z-index: 4;
-    padding-top: 20px;
+    padding-top: 4px;
 }
-
+.logo {
+    display: flex;
+    align-items: center;
+}
 [data-theme="dark"] .logo .light,
 [data-theme="light"] .logo .dark {
     display: none;
@@ -490,6 +493,8 @@ body {
     --state-layer-bg: var(--on-surface-variant);
     border-radius: var(--radius-full);
     overflow: hidden;
+    position: absolute;
+    right: 10px;
 }
 
 [data-theme="dark"] .theme-btn .dark,
@@ -1070,7 +1075,7 @@ li {
     .primary-tabs {
         
         position: sticky;
-        top: 64px;
+        top: 94px;
     }
 
     .primary-tabs {
