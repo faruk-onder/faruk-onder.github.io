@@ -334,6 +334,7 @@ function openPopup(gameName) {
     document.getElementById("gamePopup").style.display = "block";
 }
 
+/*
 window.addEventListener("scroll", function () {
     let logo = document.querySelector(".logo");
     if (!logo) return;
@@ -343,3 +344,5 @@ window.addEventListener("scroll", function () {
 
     logo.style.transform = `rotate(${rotateAngle}deg)`;
 });
+
+*/ 
